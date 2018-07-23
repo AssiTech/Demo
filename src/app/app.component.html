@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center"> -->
+  
+  <a routerLink="login">Login Page</a>
+  <router-outlet></router-outlet>
+   <h1><span>{{ title }}<div *ngIf='showData'> in Pune</div></span></h1>
+    
+    <div [ngStyle]="myst">From 2017</div>
+    <div>
+    <h3>PipeConcept:{{number|cube}}</h3>
+    <h3>Assimilate TEchNoloGY: {{name|titlecase}}</h3>
+    <h3>Assimilate TEchNoloGY: {{name|uppercase}}</h3>
+    <h3>Assimilate TEchNoloGY: {{name|lowercase}}</h3>
+    <h3>Assimilate TEchNoloGY: {{today}}</h3>
+    <h3>Assimilate TEchNoloGY: {{data|json}}</h3>
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let name of names" >
+         {{name.name}}-{{name.city}}
+        </li>
+      </ul>
+    </div>
+
+    <div [ngSwitch]="position">
+        <h6 *ngSwitchCase="'first'">First</h6>
+        <h6 *ngSwitchCase="'second'">Second</h6>
+        <h6 *ngSwitchCase="'third'">Third</h6>
+    </div>
+   
+  
+  
